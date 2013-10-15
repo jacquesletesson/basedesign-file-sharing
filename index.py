@@ -6,7 +6,9 @@ import config
 from urllib import quote
 
 # load config file
-root = config.root
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+root = os.path.join(PROJECT_ROOT,'upload/')
+#config.root
 
 types = [
     ".h",".cpp",".cxx",".cc",".c",".cs",".html",".js",
